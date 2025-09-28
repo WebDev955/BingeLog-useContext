@@ -1,0 +1,96 @@
+.epWrapper{   
+    border-top-style: solid;
+    border-color: white;
+    border-width: 2px;
+    margin-top: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: 300;
+    text-align: left;
+    text-align: center;
+
+}
+
+.epWrapper header {
+    display: flex;
+    Flex-direction: column;
+
+    background-color: var(--sinopia);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    padding-bottom: 5px;
+}
+
+.watched {
+   color: black;
+}
+
+.noteBttnsDiv {
+    display: flex;
+    align-items: stretch;
+    gap: 10px;
+    padding: 5px;
+}
+
+.editBttn {
+    padding: 5px;
+    font-weight: 600;
+    background-color: var(--xanthous);
+    border-radius: 10px;
+}
+
+.viewNotesBttn {
+    padding: 5px;
+    font-weight: 600;
+    background-color: seagreen;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+
+.closeNotesBttn {
+    padding: 5px;
+    font-weight: 600;
+    background-color: gray;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+
+
+
+.epList {
+    background-color: var(--cerulean);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    font-weight: 600;
+    text-align: left;
+}
+
+.epWrapper label, input {
+    padding: 5px;
+}
+
+.singleEp{
+    border-style: solid;
+    border-color: white;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.showNotes {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: cadetblue;
+    text-align: left;
+    color: black;
+    font-weight: 400;
+}
+
+.showNotes p{
+    font-weight: 600;
+    background-color: var(--sinopia);
+    color: whitesmoke;
+    padding: 5px;
+    border-top-style: solid;
+}
