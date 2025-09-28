@@ -154,8 +154,9 @@ async function saveShow (show){
 
         await response.json()
         userAcct.userAccount(prev => ({...prev, myShows: updatedShows}))
-        localStorage.setItem("user", JSON.stringify({ ...userAcct.userAccount, myShows: updatedShows }));
-          // sync local state
+        localStorage.setItem("user", 
+            JSON.stringify({ ...userAcct.userAccount, myShows: updatedShows}) ||  JSON.stringify(updatedShows));
+          // sync local state //add || to work locally 
     } catch (err) {
         console.error(err)
     }
