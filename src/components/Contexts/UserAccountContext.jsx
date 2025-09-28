@@ -17,7 +17,7 @@ userAccount: {
     userName: undefined,
     password: undefined,
     myShows: [],
-    friendList: []
+    //friendList: []
 },
 
 /* Bingfeed List */
@@ -64,7 +64,7 @@ const userProf = useContext(UserProfileContext)
         userName: undefined,
         password: undefined,
         myShows: [],
-        friendList: [],
+        //friendList: [],
     })
 
     console.log(userAccount)
