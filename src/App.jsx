@@ -1,5 +1,5 @@
 //IMPORTS - Hooks
-import { createBrowserRouter, RouterProvider} from 'react-router-dom'
+import { createHashRouter, RouterProvider} from 'react-router-dom'
 //import { useContext } from 'react'
 
 //IMPORTS - Components 
@@ -27,7 +27,7 @@ function App() {
 
 //const userAcct = useContext(UserAccountContext)
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path:'/',
     element: <RootLayout/>,
