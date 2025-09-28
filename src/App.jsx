@@ -8,7 +8,7 @@ import UserPage from './pages/UserPage/UserPage'
 import ShowsPage from './pages/ShowsSearchPage/ShowsPage'
 import BingeLogPage from './pages/BingeLogFeed/BingeLogPage'
 import About from './pages/About/About'
-import FriendsList from './pages/FriendsList/FriendsList'
+//import FriendsList from './pages/FriendsList/FriendsList'
 import UserSearchPage from './pages/UserSearch/UserSearchPage'
 
 import {UserAccountContextProvider, UserAccountContext} from './components/Contexts/UserAccountContext'
