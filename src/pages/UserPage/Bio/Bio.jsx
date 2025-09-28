@@ -12,7 +12,7 @@ import styles from "./bio.module.css"
 import  DefaultAvatar from "./DefaultAvatar.jpg"
 
 function Bio({id}) {
-
+ //<NavLink to="/friendsList"><h2>Friends List</h2></NavLink>
   const userAccountCtx = useContext(UserAccountContext)
   const userProCtx = useContext(UserProfileContext) 
 
@@ -25,7 +25,7 @@ function Bio({id}) {
               <img className={styles.avatar} src={userProCtx.bioAvatar} width="75" height="75"/>
               <h3>{userAccountCtx.userAccount.userName}</h3>
               <h3>Binging since: 2025</h3> 
-               <NavLink to="/friendsList"><h2>Friends List</h2></NavLink>
+              
               {userProCtx.editingBio ? <BioEdit/> : 
                 <div className={styles.bioBox}>
                   {userProCtx.bio}

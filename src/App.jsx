@@ -33,8 +33,8 @@ const router = createHashRouter([
     element: <RootLayout/>,
       children: [
         {index: true, element: <HomePage/>},
-        {path: `userPage/:id`, element: <UserPage/>},
-        {path: "friendsList", element: <FriendsList/>},
+        {path: "userPage", element: <UserPage/>},
+        //{path: "friendsList", element: <FriendsList/>},
         {path: "bingelog", element: <BingeLogPage/>},
         {path: "userSearch", element: <UserSearchPage/>,},
         {path: "shows", element: <ShowsPage/>},
