@@ -18,7 +18,8 @@ import RootLayout from './components/UI/RootLayout'
 //{path: `friendsList/:userName/:id`, element: <FriendsList/>},
   //THIS IS AN ISSUE
 
-
+        //{path: "friendsList", element: <FriendsList/>},
+        //{path: "bingelog", element: <BingeLogPage/>},
 
 //IMPORTS - Styles
 import './App.css'
@@ -34,8 +35,7 @@ const router = createHashRouter([
       children: [
         {index: true, element: <HomePage/>},
         {path: "userPage", element: <UserPage/>},
-        //{path: "friendsList", element: <FriendsList/>},
-        {path: "bingelog", element: <BingeLogPage/>},
+
         {path: "userSearch", element: <UserSearchPage/>,},
         {path: "shows", element: <ShowsPage/>},
         {path: "about", element: <About/>}
