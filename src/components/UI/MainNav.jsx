@@ -10,7 +10,7 @@ import { UserAccountContext } from "../Contexts/UserAccountContext"
 import SignUp from "./Signup"
 import Login from "../LoginLogOut/Login"
 
-    //{ <Bttn onClick = {accountCtx.logOut}><img width = "30px" src="/LogOut.png"/></Bttn>}
+
 function MainNav() {
 const accountCtx = useContext(UserAccountContext)
 
@@ -28,26 +28,26 @@ const userName = accountCtx.userAccount.userName
                   
                 </li>
                 <li>
-                    { <Bttn onClick ={() => accountCtx.startLoggingIn}><img width = "30px" src="/LogIn.png"/></Bttn>}
+                    {!accountCtx.isLoggedIn && <Bttn onClick ={accountCtx.startLoggingIn}><img width = "30px" src="/LogIn.png"/></Bttn>}
                 </li>
                  <li>
-                    {  <Bttn onClick = {() => accountCtx.startCreatingAccount}>Create Account</Bttn>}
+                    {!accountCtx.isLoggedIn && <Bttn onClick = {accountCtx.startCreatingAccount}>Create Account</Bttn>}
                 </li>
                 <li>
-                    { <NavLink to="/bingelog"><img width = "30px" src="/BingeLog.png"/></NavLink>}
+                    {accountCtx.isLoggedIn && <NavLink to="/bingelog"><img width = "30px" src="/BingeLog.png"/></NavLink>}
                 </li>
                  <li>
                     
-                    { <NavLink to={"/userPage"}><img width="30px" src ="/UserPage.png"/></NavLink>}
+                    {accountCtx.isLoggedIn && <NavLink to={`userPage/${id}`}><img width="30px" src ="/UserPage.png"/></NavLink>}
                 </li>
                  <li>
-                    { <NavLink to="/shows"><img width= "30px" src= "/TvIcon.png"/></NavLink>}
+                    {accountCtx.isLoggedIn &&<NavLink to="/shows"><img width= "30px" src= "/TvIcon.png"/></NavLink>}
                 </li>
                  <li>
-                    { <NavLink to="/userSearch"><img width= "30px" src= "/UserSearchIcon.png"/></NavLink>}
+                    {accountCtx.isLoggedIn &&<NavLink to="/userSearch"><img width= "30px" src= "/UserSearchIcon.png"/></NavLink>}
                 </li>
                  <li>
-                
+                    {accountCtx.isLoggedIn && <Bttn onClick = {accountCtx.logOut}><img width = "30px" src="/LogOut.png"/></Bttn>}
                 </li>
             </ul>  
             <SignUp/>
