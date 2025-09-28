@@ -174,27 +174,27 @@ function stopLoggingIn(){
 //}
 
 /***Display Friends List***/
-useEffect(() => {
-    fetch("http://localhost:3000/users") 
-        .then(res => res.json())
-        .then(data => {
-            userAccount.friendList(data);
-        })
-        .catch(error => {
-            console.error('Error fetching friends list:', error);
-        });
-},[])
+//useEffect(() => {
+  //  fetch("http://localhost:3000/users") 
+     //   .then(res => res.json())
+    //    .then(data => {
+     //       userAccount.friendList(data);
+     //   })
+     //   .catch(error => {
+     //       console.error('Error fetching friends list:', error);
+     //   });
+//},[])
 
 const [bingeFeed, setBingeFeed] = useState([])
 
 /***Binge Feed Data***/
-useEffect(() => {
-    fetch("http://localhost:3000/bingeFeed")
-    .then(res => res.json())
-    .then(data => {
-        setBingeFeed(data)
-    })
-},[])
+//useEffect(() => {
+   // fetch("http://localhost:3000/bingeFeed")
+   // .then(res => res.json())
+  //  .then(data => {
+   //     setBingeFeed(data)
+   // })
+//},[])
 
 
 
@@ -210,7 +210,7 @@ const accountCtx = {
 
 
         //addFriend,
-        bingeFeed,
+        //bingeFeed,
 
         isLoggedIn,
         isLoggingIn,
