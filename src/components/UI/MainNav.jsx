@@ -28,26 +28,26 @@ const userName = accountCtx.userAccount.userName
                   
                 </li>
                 <li>
-                    {!accountCtx.isLoggedIn && <Bttn onClick ={accountCtx.startLoggingIn}><img width = "30px" src="/LogIn.png"/></Bttn>}
+                    { <Bttn onClick ={accountCtx.startLoggingIn}><img width = "30px" src="/LogIn.png"/></Bttn>}
                 </li>
                  <li>
-                    {!accountCtx.isLoggedIn && <Bttn onClick = {accountCtx.startCreatingAccount}>Create Account</Bttn>}
+                    {  <Bttn onClick = {accountCtx.startCreatingAccount}>Create Account</Bttn>}
                 </li>
                 <li>
-                    {accountCtx.isLoggedIn && <NavLink to="/bingelog"><img width = "30px" src="/BingeLog.png"/></NavLink>}
+                    { <NavLink to="/bingelog"><img width = "30px" src="/BingeLog.png"/></NavLink>}
                 </li>
                  <li>
                     
-                    {accountCtx.isLoggedIn && <NavLink to={`userPage/${id}`}><img width="30px" src ="/UserPage.png"/></NavLink>}
+                    { <NavLink to={"/userPage"}><img width="30px" src ="/UserPage.png"/></NavLink>}
                 </li>
                  <li>
-                    {accountCtx.isLoggedIn &&<NavLink to="/shows"><img width= "30px" src= "/TvIcon.png"/></NavLink>}
+                    { <NavLink to="/shows"><img width= "30px" src= "/TvIcon.png"/></NavLink>}
                 </li>
                  <li>
-                    {accountCtx.isLoggedIn &&<NavLink to="/userSearch"><img width= "30px" src= "/UserSearchIcon.png"/></NavLink>}
+                    { <NavLink to="/userSearch"><img width= "30px" src= "/UserSearchIcon.png"/></NavLink>}
                 </li>
                  <li>
-                    {accountCtx.isLoggedIn && <Bttn onClick = {accountCtx.logOut}><img width = "30px" src="/LogOut.png"/></Bttn>}
+                    { <Bttn onClick = {accountCtx.logOut}><img width = "30px" src="/LogOut.png"/></Bttn>}
                 </li>
             </ul>  
             <SignUp/>
