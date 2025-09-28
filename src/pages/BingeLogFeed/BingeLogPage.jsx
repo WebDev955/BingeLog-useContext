@@ -1,11 +1,11 @@
 //IMPORTS - Hooks
 //import { useContext } from "react"
 //IMPORTS - Components 
-//import FeedCard from "./FeedCard"
-//import { UserAccountContext } from "../../components/Contexts/UserAccountContext"
+import FeedCard from "./FeedCard"
+import { UserAccountContext } from "../../components/Contexts/UserAccountContext"
 
 //IMPORTS - Styles
-//import styles from "./BingeLogPage.module.css"
+import styles from "./BingeLogPage.module.css"
 
 /* HOW THIS PAGE SHOULD NORMALLY WORK
     userCtx.friendsList.map((friend) => {
@@ -14,15 +14,15 @@
  
 */
 
-//function BingeLog() {
+function BingeLog() {
   //const userAcct = useContext(UserAccountContext)
 
-  //return (
-    //<main className = {styles.mainWrapper}>
-        //<h1>BingeLog Feed</h1>
-        //<FeedCard/>
-    //</main>
+  return (
+    <main className = {styles.mainWrapper}>
+        <h1>BingeLog Feed</h1>
+        <FeedCard/>
+    </main>
    
-  //)
-//}
-//export default BingeLog
+  )
+}
+export default BingeLog
